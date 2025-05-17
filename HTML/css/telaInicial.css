@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0;
+  margin: 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+header img {
+   width: 100%; /* Faz a imagem ocupar toda a largura da página */
+  height: 150px; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços extras ao redor da imagem */
+  max-width: none; /* Remove o limite de largura */
+ 
+}
+
+.conteudo-topo {
+  background-color: #fd9d49;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 30px;
+
+}
+
+.conteudo-topo p {
+  color: white;
+  font-weight: bold;
+  margin-left: 95px;
+  font-size: 15px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start; /* Garante que os links fiquem alinhados à esquerda */
+  gap: 25px; /* Mantém o espaçamento uniforme entre os links */
+  margin-right: 280px; /* Espaçamento à direita */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+nav {
+  display: flex;
+  align-items: center; /* Garante que todos os itens fiquem alinhados verticalmente */
+  gap: 25px; /* Espaçamento uniforme entre os links e o botão */
+}
+
+nav button {
+  background-color: #f0bd8b; /* Cor de fundo do botão */
+  border: none; /* Remove bordas padrão */
+  padding: 5px 15px; /* Ajusta o espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Mostra o cursor de clique */
+  font-size: 15px; /* Mesmo tamanho de fonte dos links */
+  font-weight: bold; /* Negrito para combinar com os links */
+  color: white; /* Cor do texto */
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente o texto */
+  justify-content: center; /* Centraliza horizontalmente o texto */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+nav button a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: inline-block; /* Garante que o link se ajuste ao botão */
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #81522a;
+}
+
+nav button:hover {
+  background-color:#ffc382;
+}
+
+
+nav button a:hover {
+    color: #fefefe; /* Cor mais escura ao passar o mouse */
+    }
+/* Conteúdo principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  margin-left: 90px;
+  width: 1040px;
+  height: 400px;
+  margin-top: -10px;
+}
+
+main img {
+  width: 490px;
+  height: 350px;
+}
+
+main section {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 50px;  
+  width: 100%;
+}
+
+main h2 {
+  font-size: 42px; 
+  color: #e09f4f;
+  margin-bottom: 85px;
+  white-space: nowrap; /* Impede a quebra de linha */
+  margin-left: 5px; /* Adiciona margem à esquerda */
+}
+
+main section p {
+  position: absolute;
+  left: 460px;
+  top: 380px;
+  max-width: 450px;
+  text-align: justify;
+  font-size: 25px;
+  margin-left: 150px; /* Empurra o parágrafo para a direita */
+}
+
+/* Seção lateral */
+aside {
+  background-color:#d6dbd5;
+  padding: 20px;
+  width: 170px;
+  border-radius: 60px;
+  text-align: center;
+  position:absolute;
+  right: 80px;
+  top: 200px;
+}
+
+aside h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #d89b3f;
+  font-weight: bold;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  
+  
+}
+
+aside li {
+  margin: 15px 0;
+  cursor: pointer;
+  border-radius:90px; /* Adiciona bordas arredondadas */
+}
+
+
+
+/* Botões de ação */
+section {
+  background-color: #d6dbd5;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 70px;
+  margin-top: 30px;
+  
+}
+
+
+section div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 20%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  top: -10px; /* Move a caixa para cima */
+  left: 20px; /* Move a caixa para a direita */
+  left: 99px; /* Move a caixa para a esquerda */
+  background-color: #fffcf3; /* Cor de fundo destacada */
+  box-shadow: 0 0 0 20px #fff4d3
+  0 4px 8px rgba(0, 0, 0, 2.1); /* Sombra para destacar */
+
+}
+
+section button {
+  background-color: #e69a42;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 10px;
+  width: 305px;
+  height: 85px;
+  position: relative;
+  top: -20px; /* Move o botão 20px para cima */
+  right:10px; /* Move o botão 20px para a direita */
+  justify-content: center;
+  
+}
+section button:hover {
+  background-color: #f0bd8b;
+}
+
+section div p {
+  margin-top: -20px; /* Move o parágrafo 10px para cima */
+  font-size: 19px;
+}
+
+/* Responsivo simples */
+@media (max-width: 768px) {
+  main, section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section div {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    position: static;
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .conteudo-topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}

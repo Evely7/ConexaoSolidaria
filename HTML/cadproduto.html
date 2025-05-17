@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Solidária</title>
+    <link rel="stylesheet" href="css/cadproduto.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Logo Conexão Solidária">
+        <div class="faixa-laranja">
+            <p>Doar, trocar e receber com empatia e solidariedade</p>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="conta.html">Criar conta</a>
+                <a href="#">Meus produtos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h2>
+                <span class="icone-voltar" onclick="window.history.back()" title="Voltar">&#8592;</span>
+                Cadastrar produto
+            </h2>
+            <div class="form-container">
+                <div class="form-section esquerda">
+                    <div class="form-group">
+                        <label for="item">Item</label>
+                        <input type="text" id="item" name="item" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="alimentos">Alimentos</option>
+                            <option value="livros">Livros</option>
+                            <option value="brinquedos">Brinquedos</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="condicao">Condição</label>
+                        <select id="condicao" name="condicao" required>
+                            <option value="">Selecione</option>
+                            <option value="novo">Novo</option>
+                            <option value="seminovo">Seminovo</option>
+                            <option value="usado">Usado</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <select id="cidade" name="cidade" required>
+                            <option value="">Selecione</option>
+<option value="Abreulândia">Abreulândia</option>
+<option value="Aguiarnópolis">Aguiarnópolis</option>
+<option value="Aliança do Tocantins">Aliança do Tocantins</option>
+<option value="Almas">Almas</option>
+<option value="Alvorada">Alvorada</option>
+<option value="Ananás">Ananás</option>
+<option value="Angico">Angico</option>
+<option value="Aparecida do Rio Negro">Aparecida do Rio Negro</option>
+<option value="Aragominas">Aragominas</option>
+<option value="Araguacema">Araguacema</option>
+<option value="Araguaçu">Araguaçu</option>
+<option value="Araguaína">Araguaína</option>
+<option value="Araguanã">Araguanã</option>
+<option value="Araguatins">Araguatins</option>
+<option value="Arapoema">Arapoema</option>
+<option value="Arraias">Arraias</option>
+<option value="Augustinópolis">Augustinópolis</option>
+<option value="Aurora do Tocantins">Aurora do Tocantins</option>
+<option value="Axixá do Tocantins">Axixá do Tocantins</option>
+<option value="Babaçulândia">Babaçulândia</option>
+<option value="Bandeirantes do Tocantins">Bandeirantes do Tocantins</option>
+<option value="Barra do Ouro">Barra do Ouro</option>
+<option value="Barrolândia">Barrolândia</option>
+<option value="Bernardo Sayão">Bernardo Sayão</option>
+<option value="Bom Jesus do Tocantins">Bom Jesus do Tocantins</option>
+<option value="Brasilândia do Tocantins">Brasilândia do Tocantins</option>
+<option value="Brejinho de Nazaré">Brejinho de Nazaré</option>
+<option value="Buriti do Tocantins">Buriti do Tocantins</option>
+<option value="Cachoeirinha">Cachoeirinha</option>
+<option value="Campos Lindos">Campos Lindos</option>
+<option value="Cariri do Tocantins">Cariri do Tocantins</option>
+<option value="Carmolândia">Carmolândia</option>
+<option value="Carrasco Bonito">Carrasco Bonito</option>
+<option value="Caseara">Caseara</option>
+<option value="Centenário">Centenário</option>
+<option value="Chapada da Natividade">Chapada da Natividade</option>
+<option value="Chapada de Areia">Chapada de Areia</option>
+<option value="Colinas do Tocantins">Colinas do Tocantins</option>
+<option value="Combinado">Combinado</option>
+<option value="Conceição do Tocantins">Conceição do Tocantins</option>
+<option value="Couto de Magalhães">Couto de Magalhães</option>
+<option value="Cristalândia">Cristalândia</option>
+<option value="Crixás do Tocantins">Crixás do Tocantins</option>
+<option value="Darcinópolis">Darcinópolis</option>
+<option value="Dianópolis">Dianópolis</option>
+<option value="Divinópolis do Tocantins">Divinópolis do Tocantins</option>
+<option value="Dois Irmãos do Tocantins">Dois Irmãos do Tocantins</option>
+<option value="Dueré">Dueré</option>
+<option value="Esperantina">Esperantina</option>
+<option value="Fátima">Fátima</option>
+<option value="Figueirópolis">Figueirópolis</option>
+<option value="Filadélfia">Filadélfia</option>
+<option value="Formoso do Araguaia">Formoso do Araguaia</option>
+<option value="Fortaleza do Tabocão">Fortaleza do Tabocão</option>
+<option value="Goianorte">Goianorte</option>
+<option value="Goiatins">Goiatins</option>
+<option value="Guaraí">Guaraí</option>
+<option value="Gurupi">Gurupi</option>
+<option value="Ipueiras">Ipueiras</option>
+<option value="Itacajá">Itacajá</option>
+<option value="Itaguatins">Itaguatins</option>
+<option value="Itapiratins">Itapiratins</option>
+<option value="Itaporã do Tocantins">Itaporã do Tocantins</option>
+<option value="Jaú do Tocantins">Jaú do Tocantins</option>
+<option value="Juarina">Juarina</option>
+<option value="Lagoa da Confusão">Lagoa da Confusão</option>
+<option value="Lagoa do Tocantins">Lagoa do Tocantins</option>
+<option value="Lajeado">Lajeado</option>
+<option value="Lavandeira">Lavandeira</option>
+<option value="Lizarda">Lizarda</option>
+<option value="Luzinópolis">Luzinópolis</option>
+<option value="Marianópolis do Tocantins">Marianópolis do Tocantins</option>
+<option value="Mateiros">Mateiros</option>
+<option value="Maurilândia do Tocantins">Maurilândia do Tocantins</option>
+<option value="Miracema do Tocantins">Miracema do Tocantins</option>
+<option value="Miranorte">Miranorte</option>
+<option value="Monte do Carmo">Monte do Carmo</option>
+<option value="Monte Santo do Tocantins">Monte Santo do Tocantins</option>
+<option value="Muricilândia">Muricilândia</option>
+<option value="Natividade">Natividade</option>
+<option value="Nazaré">Nazaré</option>
+<option value="Nova Olinda">Nova Olinda</option>
+<option value="Nova Rosalândia">Nova Rosalândia</option>
+<option value="Novo Acordo">Novo Acordo</option>
+<option value="Novo Alegre">Novo Alegre</option>
+<option value="Novo Jardim">Novo Jardim</option>
+<option value="Oliveira de Fátima">Oliveira de Fátima</option>
+<option value="Palmas">Palmas</option>
+<option value="Palmeirante">Palmeirante</option>
+<option value="Palmeiras do Tocantins">Palmeiras do Tocantins</option>
+<option value="Palmeirópolis">Palmeirópolis</option>
+<option value="Paraíso do Tocantins">Paraíso do Tocantins</option>
+<option value="Paranã">Paranã</option>
+<option value="Pau D'Arco">Pau D'Arco</option>
+<option value="Pedro Afonso">Pedro Afonso</option>
+<option value="Peixe">Peixe</option>
+<option value="Pequizeiro">Pequizeiro</option>
+<option value="Pindorama do Tocantins">Pindorama do Tocantins</option>
+<option value="Piraquê">Piraquê</option>
+<option value="Pium">Pium</option>
+<option value="Ponte Alta do Bom Jesus">Ponte Alta do Bom Jesus</option>
+<option value="Ponte Alta do Tocantins">Ponte Alta do Tocantins</option>
+<option value="Porto Alegre do Tocantins">Porto Alegre do Tocantins</option>
+<option value="Porto Nacional">Porto Nacional</option>
+<option value="Praia Norte">Praia Norte</option>
+<option value="Presidente Kennedy">Presidente Kennedy</option>
+<option value="Pugmil">Pugmil</option>
+<option value="Recursolândia">Recursolândia</option>
+<option value="Riachinho">Riachinho</option>
+<option value="Rio da Conceição">Rio da Conceição</option>
+<option value="Rio dos Bois">Rio dos Bois</option>
+<option value="Rio Sono">Rio Sono</option>
+<option value="Sampaio">Sampaio</option>
+<option value="Sandolândia">Sandolândia</option>
+<option value="Santa Fé do Araguaia">Santa Fé do Araguaia</option>
+<option value="Santa Maria do Tocantins">Santa Maria do Tocantins</option>
+<option value="Santa Rita do Tocantins">Santa Rita do Tocantins</option>
+<option value="Santa Rosa do Tocantins">Santa Rosa do Tocantins</option>
+<option value="Santa Tereza do Tocantins">Santa Tereza do Tocantins</option>
+<option value="Santa Terezinha do Tocantins">Santa Terezinha do Tocantins</option>
+<option value="São Bento do Tocantins">São Bento do Tocantins</option>
+<option value="São Félix do Tocantins">São Félix do Tocantins</option>
+<option value="São Miguel do Tocantins">São Miguel do Tocantins</option>
+<option value="São Salvador do Tocantins">São Salvador do Tocantins</option>
+<option value="São Sebastião do Tocantins">São Sebastião do Tocantins</option>
+<option value="São Valério">São Valério</option>
+<option value="Silvanópolis">Silvanópolis</option>
+<option value="Sítio Novo do Tocantins">Sítio Novo do Tocantins</option>
+<option value="Sucupira">Sucupira</option>
+<option value="Taguatinga">Taguatinga</option>
+<option value="Taipas do Tocantins">Taipas do Tocantins</option>
+<option value="Talismã">Talismã</option>
+<option value="Tocantínia">Tocantínia</option>
+<option value="Tocantinópolis">Tocantinópolis</option>
+<option value="Tupirama">Tupirama</option>
+<option value="Tupiratins">Tupiratins</option>
+<option value="Wanderlândia">Wanderlândia</option>
+<option value="Xambioá">Xambioá</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="rua" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+                </div>
+                <div class="form-section direita">
+                    <div class="image-upload">
+                        <label for="imagem-upload" class="upload-label">
+                            <img src="img/galeria-de-fotos.png" alt="Ícone de Upload" class="icone-upload">
+                            <span class="texto-upload">Carregar Imagem</span>
+                        </label>
+                        <input type="file" id="imagem-upload" name="imagem" accept="image/*">
+                        <img id="preview" src="#" alt="Pré-visualização">
+                    </div>
+                    <div class="form-group">
+                        <label for="entrega">Formas de Entrega</label>
+                        <select id="entrega" name="entrega" required>
+                            <option value="">Selecione</option>
+                            <option value="retirada">Retirada no local</option>
+                            <option value="entrega">Entrega em domicílio</option>
+                            <option value="correios">Envio pelos Correios</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="disponibilidade">Disponibilidade para:</label>
+                        <select id="disponibilidade" name="disponibilidade" required>
+                            <option value="">Selecione</option>
+                            <option value="doacao">Doação</option>
+                            <option value="troca">Troca</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script>
+        const imagemUpload = document.getElementById('imagem-upload');
+        const previewImg = document.getElementById('preview');
+
+        imagemUpload.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            } else {
+                previewImg.src = '#';
+                previewImg.style.display = 'none';
+            }
+        });
+    </script>
+    <main>
+          <footer class="linha-laranja"></footer>
+</body>
+</html>

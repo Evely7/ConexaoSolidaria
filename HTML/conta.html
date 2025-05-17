@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Solidária</title>
+    <link rel="stylesheet" href="css/conta.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Logo Conexão Solidária">
+        <div class="faixa-laranja">
+            <p>Doar, trocar e receber com empatia e solidariedade</p>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="cadproduto.html">Cadastrar produtos</a>
+                <a href="#">Meus produtos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h2>
+                <span class="icone-voltar" onclick="window.history.back()" title="Voltar">&#8592;</span>
+                Criar Conta
+            </h2>
+            <div class="form-container">
+                <div class="form-section esquerda">
+                    <div class="form-group">
+                        <label for="Nome Completo">Nome Completo</label>
+                        <input type="text" id="Nome Completo" name="Nome Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="CPF">CPF</label>
+                        <input type="text" id="CPF" name="CPF" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Data de nascimento">Data de nascimento</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="E-mail">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                </div>
+                <div class="form-section direita">
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="linha-laranja"></footer>
+</body>
+</html>
