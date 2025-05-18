@@ -28,7 +28,7 @@ header img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 170px;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ header img {
 .faixa-laranja nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 96px;
   justify-content: center;
 }
 

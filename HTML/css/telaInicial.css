@@ -56,8 +56,8 @@ header img {
 nav {
   display: flex;
   justify-content: flex-start; /* Garante que os links fiquem alinhados à esquerda */
-  gap: 25px; /* Mantém o espaçamento uniforme entre os links */
-  margin-right: 280px; /* Espaçamento à direita */
+  gap: 90px; /* Mantém o espaçamento uniforme entre os links */
+  margin-right: 150px; /* Espaçamento à direita */
 }
 
 nav a {
@@ -81,18 +81,18 @@ nav {
 }
 
 nav button {
-  background-color: #f0bd8b; /* Cor de fundo do botão */
-  border: none; /* Remove bordas padrão */
-  padding: 5px 15px; /* Ajusta o espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Mostra o cursor de clique */
-  font-size: 15px; /* Mesmo tamanho de fonte dos links */
-  font-weight: bold; /* Negrito para combinar com os links */
-  color: white; /* Cor do texto */
-  display: flex; /* Usa flexbox para centralizar o conteúdo */
-  align-items: center; /* Centraliza verticalmente o texto */
-  justify-content: center; /* Centraliza horizontalmente o texto */
-  height: auto; /* Ajusta a altura automaticamente */
+  background-color: #f0bd8b; 
+  border: none; 
+  padding: 5px 15px;  
+  border-radius: 5px;
+  cursor: pointer; 
+  font-size: 15px; 
+  font-weight: bold; 
+  color: white;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: auto; 
 }
 
 nav button a {
