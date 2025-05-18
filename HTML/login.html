@@ -1,42 +1,53 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão Solidária</title>
-    <link rel="stylesheet" href="css/conta.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conexão Solidária</title>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <header>
-        <img src="img/Logo.png" alt="Logo Conexão Solidária">
-        <div class="faixa-laranja">
-            <p>Doar, trocar e receber com empatia e solidariedade</p>
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="cadproduto.html">Cadastrar produtos</a>
-                <a href="#">Meus produtos</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="login">
-            <form>
-            <h2>Acesse</h2>
-            <p>Com email e senha para entrar</p>
-            <div class="form-container">
-                    <div class="form-group">
-                        <label for="Digite seu e-mail">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="Digite sua senha">Senha</label>
-                        <input type="password" id="senha" name="senha" required>
-                        <a href="#">Esqueci minha senha</a>
-                        <button type="button">Cadastrar</button>
-                        <button type="submit">Entrar</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer class="linha-laranja"></footer>
+  <header>
+    <img src="img/Logo.png" alt="Logo Conexão Solidária" />
+    <div class="faixa-laranja">
+      <p>Doar, trocar e receber com empatia e solidariedade</p>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="cadproduto.html">Cadastrar produtos</a>
+        <a href="#">Meus produtos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="mensagem">
+        <p>“Nosso objetivo é conectar solidariedade e necessidade, promovendo um espaço acessível para doações e trocas que transformam vidas com empatia, dignidade e respeito.”</p>
+      </div>
+
+      <div class="login">
+        <form>
+          <h2>Acesse</h2>
+          <p>Com email e senha para entrar</p>
+          <div class="form-group">
+            <label for="email">Digite seu e-mail</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="senha">Digite sua senha</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <a href="#">Esqueci minha senha</a>
+
+            <div class="form-buttons">
+              <button type="button">Cadastrar</button>
+              <button type="submit">Entrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="linha-laranja"></footer>
 </body>
 </html>

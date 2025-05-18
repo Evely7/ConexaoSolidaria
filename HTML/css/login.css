@@ -1,229 +1,280 @@
-/* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-        }
-
-        header img {
-            width: 100%;
-            max-width: 100vw;
-            height: auto;
-            display: block;
-            object-fit: contain;
-        }
-
-        .faixa-laranja {
-            background-color: #f58220;
-            width: 100%;
-            min-height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 20px;
-            padding: 0 10px;
-            box-sizing: border-box;
-        }
-
-        .faixa-laranja p {
-            color: white;
-            font-weight: bold;
-            margin: 0;
-            text-align: left;
-            font-size: 1.1rem;
-            margin-left: 40px;
-        }
-
-        .faixa-laranja nav {
-            display: flex;
-            gap: 40px;
-            margin-left: auto;
-            margin-right: 90px;
-        }
-
-        .faixa-laranja nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 6px 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-            display: inline-block;
-            font-size: 1rem;
-        }
-
-        .faixa-laranja nav a:hover {
-            background-color: rgba(255,255,255,0.3);
-        }
-
-        /* Linha laranja no rodapé */
-        .linha-laranja {
-            width: 100%;
-            height: 40px;
-            background: #f58220;
-            margin-top: 32px;
-            border: none;
-        }
-
-        /* Formulário */
-        form {
-            background: #d9d9d9;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 32px 24px;
-            max-width: 900px;
-            margin: 12px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-            width: 100%;
-            align-items: flex-start;
-        }
-
-        form h2 {
-            width: 100%;
-            margin-bottom: 16px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-
-        .icone-voltar {
-            font-size: 1.5em;
-            margin-right: 10px;
-            vertical-align: middle;
-            cursor: pointer;
-            color: #040405;
-            text-shadow: 1px 1px 6px #bbb, 0 0 8px #fff;
-            transition: color 0.2s, text-shadow 0.2s, transform 0.2s;
-            border-radius: 50%;
-            padding: 4px 8px;
-        }
-
-        .icone-voltar:hover {
-            color: #3f3838;
-            background: #dbe0da;
-            text-shadow: 2px 2px 8px #000000, 0 0 12px #ffffff;
-            transform: scale(1.15);
-        }
-
-        .form-container {
-            display: flex;
-            gap: 32px;
-            width: 100%;
-            align-items: flex-start;
-        }
-
-        .form-section {
-            flex: 1 1 300px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .form-section.direita {
-            align-items: flex-start;
-        }
-        .form-section.direita button[type="submit"] {
-    align-self: center;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 4px;
-            width: 100%;
-        }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
 
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+/* Logo */
+header img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="date"] {
-            padding: 10px;
-            border: 1px solid #aaa;
-            border-radius: 8px;
-            font-size: 1rem;
-            background-color: #fff8f8;
-            width: 100%;
-        }
+/* Faixa laranja */
+.faixa-laranja {
+  background-color: #f58220;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  text-align: center;
+}
 
-        button[type="submit"] {
-            padding: 12px 20px;
-            background-color: #1c4ca3;
-            color: white;
-            font-size: 1rem;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            width: fit-content;
-            align-self: flex-start;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
+.faixa-laranja p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
 
-        button[type="submit"]:hover {
-            background-color: #1d893d;
-        }
+.faixa-laranja nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
 
-        /* Responsividade */
-        @media (max-width: 900px) {
-            .form-container {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 16px;
-            }
-            .form-section {
-                width: 100%;
-                align-items: flex-start;
-            }
-            .form-section.direita {
-                align-items: flex-start;
-            }
-            button[type="submit"] {
-                align-self: flex-start;
-            }
-        }
+.faixa-laranja nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
 
-        @media (max-width: 600px) {
-            form {
-                padding: 16px 4px;
-            }
-            header img {
-                max-height: 80px;
-            }
-            .faixa-laranja {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                padding: 10px 6px;
-            }
-            .faixa-laranja p {
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-            }
-            .faixa-laranja nav {
-                margin-left: 0;
-                margin-right: 0;
-                width: 100%;
-                justify-content: center;
-                gap: 10px;
-                flex-wrap: wrap;
-            }
-            .faixa-laranja nav a {
-                text-align: center;
-            }
-        }
-    
+.faixa-laranja nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Rodapé */
+.linha-laranja {
+  width: 100%;
+  height: 40px;
+  background: #f58220;
+  margin-top: 32px;
+  border: none;
+}
+
+/* Conteúdo principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+/* Frase sobre a imagem */
+.mensagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/pessoa doado roupas.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #ffffff;
+  font-size: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-top: -30px;
+}
+
+.mensagem p {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: 95%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Formulário */
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.login form {
+  background: #d9d9d9;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  min-height: 450px;
+}
+
+.login h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.login p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff8f8;
+}
+
+a {
+  font-size: 0.9rem;
+  color: #1c4ca3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botões */
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="button"] {
+  background-color: #ffffff;
+  color: #1c4ca3;
+  border: 2px solid #1c4ca3;
+}
+
+button[type="submit"] {
+  background-color: #1d893d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mensagem {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .login form {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faixa-laranja {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  .faixa-laranja p {
+    font-size: 1rem;
+  }
+
+  .faixa-laranja nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .faixa-laranja nav a {
+    font-size: 0.95rem;
+  }
+
+  .mensagem {
+    max-width: 95%;
+    aspect-ratio: 1 / 1;
+    padding: 16px;
+  }
+
+  .mensagem p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .login form {
+    padding: 24px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
