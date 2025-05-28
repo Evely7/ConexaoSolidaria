@@ -8,10 +8,8 @@
 
 body {
   background-color: #ffffff;
-  
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 /* Cabeçalho */
@@ -19,20 +17,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0;
+  padding: 0;
   margin: 0;
   flex-wrap: wrap;
   width: 100%;
 }
 
 header img {
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 100vw;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .conteudo-topo {
@@ -42,22 +40,22 @@ header img {
   justify-content: space-between;
   flex-grow: 1;
   height: 30px;
-
 }
+
+
 
 .conteudo-topo p {
   color: white;
   font-weight: bold;
   margin-left: 95px;
   font-size: 15px;
-
 }
 
 nav {
   display: flex;
-  justify-content: flex-start; /* Garante que os links fiquem alinhados à esquerda */
-  gap: 90px; /* Mantém o espaçamento uniforme entre os links */
-  margin-right: 150px; /* Espaçamento à direita */
+  align-items: center;
+  gap: 25px;
+  margin-right: 150px;
 }
 
 nav a {
@@ -73,44 +71,36 @@ nav a:hover {
   color: rgb(0, 0, 0);
 }
 
-
-nav {
-  display: flex;
-  align-items: center; /* Garante que todos os itens fiquem alinhados verticalmente */
-  gap: 25px; /* Espaçamento uniforme entre os links e o botão */
-}
-
 nav button {
-  background-color: #f0bd8b; 
-  border: none; 
-  padding: 5px 15px;  
+  background-color: #f0bd8b;
+  border: none;
+  padding: 5px 15px;
   border-radius: 5px;
-  cursor: pointer; 
-  font-size: 15px; 
-  font-weight: bold; 
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
   color: white;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  height: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 nav button a {
-  text-decoration: none; /* Remove o sublinhado do link */
-  display: inline-block; /* Garante que o link se ajuste ao botão */
+  text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
   color: #81522a;
 }
 
 nav button:hover {
-  background-color:#ffc382;
+  background-color: #ffc382;
 }
 
-
 nav button a:hover {
-    color: #fefefe; /* Cor mais escura ao passar o mouse */
-    }
+  color: #fefefe;
+}
+
 /* Conteúdo principal */
 main {
   display: flex;
@@ -133,16 +123,16 @@ main section {
   display: flex;
   align-items: center;
   gap: 2px;
-  border-radius: 50px;  
+  border-radius: 50px;
   width: 100%;
 }
 
 main h2 {
-  font-size: 42px; 
+  font-size: 42px;
   color: #e09f4f;
   margin-bottom: 85px;
-  white-space: nowrap; /* Impede a quebra de linha */
-  margin-left: 5px; /* Adiciona margem à esquerda */
+  white-space: nowrap;
+  margin-left: 5px;
 }
 
 main section p {
@@ -152,17 +142,17 @@ main section p {
   max-width: 450px;
   text-align: justify;
   font-size: 25px;
-  margin-left: 150px; /* Empurra o parágrafo para a direita */
+  margin-left: 150px;
 }
 
 /* Seção lateral */
 aside {
-  background-color:#d6dbd5;
+  background-color: #d6dbd5;
   padding: 20px;
   width: 170px;
   border-radius: 60px;
   text-align: center;
-  position:absolute;
+  position: absolute;
   right: 80px;
   top: 220px;
 }
@@ -177,16 +167,23 @@ aside h3 {
 aside ul {
   list-style: none;
   padding: 0;
-  
-  
 }
 
 aside li {
   margin: 15px 0;
   cursor: pointer;
-  border-radius:90px; /* Adiciona bordas arredondadas */
+  border-radius: 90px;
+}
+/* ==== Animação nos ícones de produto ==== */
+aside ul li img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
+aside ul li img:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+}
 
 
 /* Botões de ação */
@@ -197,25 +194,20 @@ section {
   text-align: center;
   gap: 70px;
   margin-top: 30px;
-  
 }
 
-
 section div {
-  background-color: white;
+  background-color: #fffcf3;
   padding: 10px;
   border-radius: 20px;
   width: 20%;
   height: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow:
+    0 0 0 20px #d6dbd5,
+    0 4px 8px rgba(0, 0, 0, 0.21);
   position: relative;
-  top: -10px; /* Move a caixa para cima */
-  left: 20px; /* Move a caixa para a direita */
-  left: 99px; /* Move a caixa para a esquerda */
-  background-color: #fffcf3; /* Cor de fundo destacada */
-  box-shadow: 0 0 0 20px #fff4d3
-  0 4px 8px rgba(0, 0, 0, 2.1); /* Sombra para destacar */
-
+  top: -10px;
+  left: 99px;
 }
 
 section button {
@@ -231,40 +223,50 @@ section button {
   width: 305px;
   height: 85px;
   position: relative;
-  top: -20px; /* Move o botão 20px para cima */
-  right:10px; /* Move o botão 20px para a direita */
+  top: -20px;
+  right: 10px;
   justify-content: center;
-  
 }
+
 section button:hover {
   background-color: #f0bd8b;
 }
 
 section div p {
-  margin-top: -20px; /* Move o parágrafo 10px para cima */
+  margin-top: -20px;
   font-size: 19px;
 }
 
-/* Ajustes para tornar responsivo */
+/* Responsividade */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+   header img {
+        height: 100px;
+   }
 
   .conteudo-topo {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    position: center;
+    padding: 10px;
+    height: auto;
+    gap: 10px;
+    justify-content: center;
   }
 
   nav {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-right: 0;
+    margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
   }
+  nav a {
+        text-align: center;
+    }
 
   main {
     flex-direction: column;
@@ -272,11 +274,12 @@ section div p {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
+    height: auto;
+    padding: 20px;
   }
 
   main img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -284,30 +287,50 @@ section div p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
+  }
+
+  main h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  main section p {
+    position: static;
+    margin: 10px 20px;
+    font-size: 18px;
+    text-align: center;
   }
 
   aside {
-    position: static; /* Ajustando posição para evitar sobreposição */
+    position: static;
     width: 90%;
     margin: 20px auto;
-    text-align: center;
+    border-radius: 20px;
   }
 
-  section {
+  .faixa-inferior {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    margin: 30px auto;
     width: 90%;
-    margin: 0 auto;
   }
 
-  section div {
+  .faixa-inferior div {
     width: 100%;
-    text-align: center;
+    left: 0;
   }
 
-  section button {
-    width: 100%;
+  .faixa-inferior button {
+    width: 105%;
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .faixa-inferior div p {
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
-
